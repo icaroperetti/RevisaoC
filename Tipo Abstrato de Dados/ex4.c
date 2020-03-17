@@ -72,20 +72,20 @@ int* criaY(){
 
 void carregaVetor(Vetores* vet){
     for(int x = 0; x < TAM; x++){
-		printf("Escreva o valor para a posicao[%d]: ",x+1);
-		scanf("%d", &vet->n[x]);
+	printf("Escreva o valor para a posicao[%d]: ",x+1);
+	scanf("%d", &vet->n[x]);
 
-		if(vet->n[x] % 3 == 0 && vet->n[x] % 2 == 0){
+	if(vet->n[x] % 3 == 0 && vet->n[x] % 2 == 0){
             vet->x[x] = vet->n[x];
         }
-		else{
-			vet->x[x] = 0;
+	else{
+	  vet->x[x] = 0;
         }
-		if(vet->n[x] % 2 != 0 && vet->n[x] % 5 == 0){
+	if(vet->n[x] % 2 != 0 && vet->n[x] % 5 == 0){
         	vet->y[x] = vet->n[x];
         }    
-		else{
-			vet->y[x] = 0;
+	else{
+	  vet->y[x] = 0;
         }    
     }
 }
@@ -94,14 +94,14 @@ void escreveVetor(Vetores* vet){
 	printf("Vetor X:\n");
 	for(int x = 0;x < TAM; x++){
 		if(vet->x[x] != 0){
-			printf("[%d]\n",vet->x[x]);
+		   printf("[%d]\n",vet->x[x]);
         }
     }
 
 	printf("\nVetor Y:\n");
 	for(int x = 0;x < TAM; x++){
 		if(vet->y[x] != 0){
-			printf("[%d]\n",vet->y[x]);
-        }    
+		   printf("[%d]\n",vet->y[x]);
+        	}    
 	}
 }
