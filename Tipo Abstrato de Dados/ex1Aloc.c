@@ -25,7 +25,7 @@ void escreveVetor(Pessoas* pessoa);
 Pessoas* criaPessoa();
 
 int main(){
-	Pessoas *pessoa;
+	Pessoas* pessoa;
 	
 	pessoa = criaPessoa();
 
